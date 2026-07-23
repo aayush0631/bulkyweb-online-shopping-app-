@@ -16,5 +16,6 @@ namespace Bulky.Models
         public string? City { get; set; }
         public string? state { get; set; }
         public string? PostalCode { get; set; }
+        public int? CompanyId { get; set; }
     }
 }

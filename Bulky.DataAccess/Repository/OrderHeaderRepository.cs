@@ -10,17 +10,44 @@ using System.Threading.Tasks;
 
 namespace Bulky.DataAccess.Repository
 {
-    public class CategoryRepository : Repository<Category>, ICategoryRepository
+    public class OrderHeaderRepository : Repository<OrderHeader>, IOrderHeaderRepository
     {
         private ApplicationDbContext _db;
-        public CategoryRepository(ApplicationDbContext db) : base(db)
+        public OrderHeaderRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
 
-        public void Update(Category obj)
+        public void Update(OrderHeader obj)
         {
-            _db.Categories.Update(obj);
+            _db.OrderHeaders.Update(obj);
+        }
+
+        public void UpdateStatus(int id, string orderStatus, string? paymentStatus = null)
+        {
+            var orderFromDb = _db.OrderHeaders.FirstOrDefault(u => u.Id == id);
+            if (orderFromDb != null)
+            {
+                orderFromDb.OrderStatus = orderStatus;
+                if (orderFromDb.PaymentStatus != null)
+                {
+                    orderFromDb.PaymentStatus = paymentStatus;
+                }
+            }
+        }
+
+        public void UpdateStripePaymentID(int id, string sessionId, string PaymentIntentId)
+        {
+            var orderFromDb = _db.OrderHeaders.FirstOrDefault(u => u.Id == id);
+            if(!string.IsNullOrEmpty(sessionId))
+            {
+                orderFromDb.SessionId = sessionId;
+            }
+            if (!string.IsNullOrEmpty(PaymentIntentId))
+            {
+                orderFromDb.paymentIntentId = PaymentIntentId;
+                orderFromDb.PaymentDate= DateTime.Now;
+            }
         }
     }
 }
