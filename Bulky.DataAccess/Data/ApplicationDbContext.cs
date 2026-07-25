@@ -22,7 +22,7 @@ namespace Bulky.DataAccess.Data
         {
             get; set;
         }
-        
+
         public DbSet<OrderDetails> OrderDetails
         {
             get; set;
@@ -37,17 +37,63 @@ namespace Bulky.DataAccess.Data
         {
             get; set;
         }
+        public DbSet<Company> Companies
+        {
+            get; set;
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            base.OnModelCreating(modelBuilder); 
+            base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, Name = "aayush", DisplayOrder = 1 },
                 new Category { Id = 2, Name = "stha", DisplayOrder = 2 },
                 new Category { Id = 3, Name = "avi", DisplayOrder = 3 }
                 );
+            modelBuilder.Entity<Company>().HasData(
+    new Company
+    {
+        Id = 1,
+        Name = "TechNova Solutions",
+        StreetAddress = "123 Main Street",
+        City = "Kathmandu",
+        state = "Bagmati",
+        PostalCode = "44600",
+        phoneNumber = 9811111111
+    },
+    new Company
+    {
+        Id = 2,
+        Name = "Everest IT Pvt. Ltd.",
+        StreetAddress = "45 Lakeside Road",
+        City = "Pokhara",
+        state = "Gandaki",
+        PostalCode = "33700",
+        phoneNumber = 9822222222
+    },
+    new Company
+    {
+        Id = 3,
+        Name = "Himalayan Traders",
+        StreetAddress = "78 Putalisadak",
+        City = "Kathmandu",
+        state = "Bagmati",
+        PostalCode = "44605",
+        phoneNumber = 9833333333
+    },
+    new Company
+    {
+        Id = 4,
+        Name = "Future Soft Nepal",
+        StreetAddress = "12 Birtamode Chowk",
+        City = "Birtamode",
+        state = "Koshi",
+        PostalCode = "57204",
+        phoneNumber = 9844444444
+    }
+);
             modelBuilder.Entity<Product>().HasData(
                 new Product
                 {
@@ -61,7 +107,7 @@ namespace Bulky.DataAccess.Data
                     Price50 = 35,
                     Price100 = 30,
                     CategoryId = 1,
-                    ImageUrl=""
+                    ImageUrl = ""
                 },
                 new Product
                 {
@@ -75,7 +121,7 @@ namespace Bulky.DataAccess.Data
                     Price50 = 45,
                     Price100 = 40,
                     CategoryId = 2,
-                    ImageUrl=""
+                    ImageUrl = ""
                 },
                 new Product
                 {
@@ -89,7 +135,7 @@ namespace Bulky.DataAccess.Data
                     Price50 = 27,
                     Price100 = 24,
                     CategoryId = 3,
-                    ImageUrl=""
+                    ImageUrl = ""
                 },
                 new Product
                 {
@@ -103,7 +149,7 @@ namespace Bulky.DataAccess.Data
                     Price50 = 24,
                     Price100 = 20,
                     CategoryId = 1,
-                    ImageUrl=""
+                    ImageUrl = ""
                 },
                 new Product
                 {
@@ -117,7 +163,7 @@ namespace Bulky.DataAccess.Data
                     Price50 = 19,
                     Price100 = 16,
                     CategoryId = 2,
-                    ImageUrl=""
+                    ImageUrl = ""
                 }
             );
         }

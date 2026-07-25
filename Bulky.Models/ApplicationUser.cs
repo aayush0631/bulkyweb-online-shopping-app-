@@ -1,7 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Common;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,5 +22,8 @@ namespace Bulky.Models
         public string? state { get; set; }
         public string? PostalCode { get; set; }
         public int? CompanyId { get; set; }
+        [ValidateNever]
+        [ForeignKey(nameof(CompanyId))]
+        public Company company { get; set; }
     }
 }

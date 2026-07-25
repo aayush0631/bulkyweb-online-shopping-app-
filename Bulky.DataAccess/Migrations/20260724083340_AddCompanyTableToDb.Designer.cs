@@ -4,6 +4,7 @@ using Bulky.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bulky.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260724083340_AddCompanyTableToDb")]
+    partial class AddCompanyTableToDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -93,48 +96,6 @@ namespace Bulky.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Companies");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            City = "Kathmandu",
-                            Name = "TechNova Solutions",
-                            PostalCode = "44600",
-                            StreetAddress = "123 Main Street",
-                            phoneNumber = 9811111111L,
-                            state = "Bagmati"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            City = "Pokhara",
-                            Name = "Everest IT Pvt. Ltd.",
-                            PostalCode = "33700",
-                            StreetAddress = "45 Lakeside Road",
-                            phoneNumber = 9822222222L,
-                            state = "Gandaki"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            City = "Kathmandu",
-                            Name = "Himalayan Traders",
-                            PostalCode = "44605",
-                            StreetAddress = "78 Putalisadak",
-                            phoneNumber = 9833333333L,
-                            state = "Bagmati"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            City = "Birtamode",
-                            Name = "Future Soft Nepal",
-                            PostalCode = "57204",
-                            StreetAddress = "12 Birtamode Chowk",
-                            phoneNumber = 9844444444L,
-                            state = "Koshi"
-                        });
                 });
 
             modelBuilder.Entity("Bulky.Models.OrderDetails", b =>
@@ -621,8 +582,6 @@ namespace Bulky.DataAccess.Migrations
                     b.Property<string>("state")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasIndex("CompanyId");
-
                     b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
@@ -735,15 +694,6 @@ namespace Bulky.DataAccess.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Bulky.Models.ApplicationUser", b =>
-                {
-                    b.HasOne("Bulky.Models.Company", "company")
-                        .WithMany()
-                        .HasForeignKey("CompanyId");
-
-                    b.Navigation("company");
                 });
 #pragma warning restore 612, 618
         }
