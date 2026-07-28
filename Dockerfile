@@ -6,6 +6,9 @@ WORKDIR /src
 COPY . .
 
 # Restore
+RUN ls -la
+RUN ls -la BulkyWeb
+
 RUN dotnet restore BulkyWeb/BulkyWeb.csproj
 
 # Publish
