@@ -1,0 +1,104 @@
+﻿@model Company
+
+<form method="post" class="row" enctype="multipart/form-data">
+    <input asp-for="Id" hidden />
+    <div class="row"> 
+        <div class=" col-12">
+            <div class="border p-3 mt-4">
+                <div class="row pb-2">
+                    <h2 class="text-primary">
+                        @(Model.Id != 0 ? "update" : "create") Company
+                    </h2>
+                    <hr />
+                </div>
+
+                <div asp-validation-summary="All"></div>
+
+                <div class="mb-3 row p-1">
+                    <label asp-for="Name" class="p-0"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3 row p-1">
+                    <label asp-for="phoneNumber" class="p-0"></label>
+                    <input asp-for="phoneNumber" class="form-control" />
+                    <span asp-validation-for="phoneNumber" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3 row p-1">
+                    <label asp-for="StreetAddress" class="p-0"></label>
+                    <input asp-for="StreetAddress" class="form-control" />
+                    <span asp-validation-for="StreetAddress" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3 row p-1">
+                    <label asp-for="City" class="p-0"></label>
+                    <input asp-for="City" class="form-control" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3 row p-1">
+                    <label asp-for="state" class="p-0"></label>
+                    <input asp-for="state" class="form-control" />
+                    <span asp-validation-for="state" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3 row p-1">
+                    <label asp-for="PostalCode" class="p-0"></label>
+                    <input asp-for="PostalCode" class="form-control" />
+                    <span asp-validation-for="PostalCode" class="text-danger"></span>
+                </div>
+
+                <div class="col-6 col-md-3 d-flex gap-2">
+                    @if (Model.Id != 0)
+                    {
+                        <button type="submit" class="btn btn-primary flex-fill">
+                            Update
+                        </button>
+                    }
+                    else
+                    {
+                        <button type="submit" class="btn btn-primary flex-fill">
+                            Create
+                        </button>
+                    }
+                    <a asp-controller="Company"
+                       asp-action="Index"
+                       class="btn btn-secondary flex-fill">
+                        Back To List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        tinymce.init({
+          selector: 'textarea',
+          plugins: [
+            // Core editing features
+            'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
+            // Premium features
+            'checklist', 'mediaembed', 'casechange', 'formatpainter', 'pageembed', 'a11ychecker', 'tinymcespellchecker', 'permanentpen', 'powerpaste', 'advtable', 'advcode', 'advtemplate', 'tinymceai', 'uploadcare', 'mentions', 'tinycomments', 'tableofcontents', 'footnotes', 'mergetags', 'autocorrect', 'typography', 'inlinecss', 'markdown','importword', 'exportword', 'exportpdf'
+          ],
+          toolbar: 'undo redo | tinymceai-chat tinymceai-quickactions tinymceai-review | blocks fontfamily fontsize | bold italic underline strikethrough | link media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography uploadcare | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+          tinycomments_mode: 'embedded',
+          tinycomments_author: 'Author name',
+          mergetags_list: [
+            { value: 'First.Name', title: 'First Name' },
+            { value: 'Email', title: 'Email' },
+          ],
+          tinymceai_token_provider: async () => {
+            await fetch(`https://demo.api.tiny.cloud/1/j9m7lqq2jmggjuqo61io724dpp13bia2ipditjn3nzrc4163/auth/random`, { method: "POST", credentials: "include" });
+            return { token: await fetch(`https://demo.api.tiny.cloud/1/j9m7lqq2jmggjuqo61io724dpp13bia2ipditjn3nzrc4163/jwt/tinymceai`, { credentials: "include" }).then(r => r.text()) };
+          },
+          uploadcare_public_key: '26baff34b99d40d83103',
+        });
+    </script>
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

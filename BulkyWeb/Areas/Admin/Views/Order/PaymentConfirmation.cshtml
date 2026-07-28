@@ -1,0 +1,21 @@
+﻿@model int
+
+<div class="container row pt-4">
+    <div class="col-12 text-center">
+        <h1 class="text-primary text-center">
+            payment Successful! 🎉
+        </h1>
+        <div style="font-size: 80px;">
+            ✅
+        </div>
+        <p class="mt-3">
+            Your payment Number is: <strong>@Model</strong>
+        </p>
+        <p>
+            Your payment has been successful!
+        </p>
+        <a asp-area="Admin" asp-controller="Order" asp-action="Details" asp-route-orderId="@Model" class="btn btn-primary mt-3">
+            Continue Shopping
+        </a>
+    </div>
+</div>
