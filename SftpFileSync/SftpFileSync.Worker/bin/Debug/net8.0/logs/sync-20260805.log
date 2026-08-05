@@ -1,0 +1,247 @@
+2026-08-05 09:53:37.839 +05:45 [INF] Worker Started
+2026-08-05 09:53:38.273 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-05 09:53:38.279 +05:45 [INF] Hosting environment: Production
+2026-08-05 09:53:38.284 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-05 09:54:00.052 +05:45 [INF] Next execution at "2026-08-05T09:54:00.0000000+05:45"
+2026-08-05 09:54:21.818 +05:45 [INF] Starting SFTP synchronization...
+2026-08-05 10:00:25.758 +05:45 [INF] Application is shutting down...
+2026-08-05 10:00:25.776 +05:45 [ERR] Failed to connect to SFTP server localhost
+System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at Renci.SshNet.Abstractions.SocketAbstraction.ConnectCore(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout, Boolean ownsSocket)
+   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout)
+   at Renci.SshNet.Connection.ConnectorBase.SocketConnect(EndPoint endPoint, TimeSpan timeout)
+   at Renci.SshNet.Connection.DirectConnector.Connect(IConnectionInfo connectionInfo)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at SftpFileSync.Worker.Services.SftpClientService.<>c__DisplayClass6_0.<CreateAsync>b__0() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+2026-08-05 10:00:25.899 +05:45 [ERR] Unexpected error during synchronization.
+System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at Renci.SshNet.Abstractions.SocketAbstraction.ConnectCore(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout, Boolean ownsSocket)
+   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout)
+   at Renci.SshNet.Connection.ConnectorBase.SocketConnect(EndPoint endPoint, TimeSpan timeout)
+   at Renci.SshNet.Connection.DirectConnector.Connect(IConnectionInfo connectionInfo)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at SftpFileSync.Worker.Services.SftpClientService.<>c__DisplayClass6_0.<CreateAsync>b__0() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 59
+2026-08-05 10:00:25.915 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 0
+Failed     : 0
+Duration   : 00:06:04
+2026-08-05 10:00:43.289 +05:45 [INF] Worker Started
+2026-08-05 10:00:43.466 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-05 10:00:43.685 +05:45 [INF] Hosting environment: Production
+2026-08-05 10:00:43.690 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-05 10:01:00.009 +05:45 [INF] Next execution at "2026-08-05T10:01:00.0000000+05:45"
+2026-08-05 10:01:16.669 +05:45 [INF] Starting SFTP synchronization...
+2026-08-05 10:01:53.203 +05:45 [ERR] Failed to connect to SFTP server localhost
+System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at Renci.SshNet.Abstractions.SocketAbstraction.ConnectCore(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout, Boolean ownsSocket)
+   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout)
+   at Renci.SshNet.Connection.ConnectorBase.SocketConnect(EndPoint endPoint, TimeSpan timeout)
+   at Renci.SshNet.Connection.DirectConnector.Connect(IConnectionInfo connectionInfo)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at SftpFileSync.Worker.Services.SftpClientService.<>c__DisplayClass6_0.<CreateAsync>b__0() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+2026-08-05 10:01:53.279 +05:45 [ERR] Unexpected error during synchronization.
+System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at Renci.SshNet.Abstractions.SocketAbstraction.ConnectCore(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout, Boolean ownsSocket)
+   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout)
+   at Renci.SshNet.Connection.ConnectorBase.SocketConnect(EndPoint endPoint, TimeSpan timeout)
+   at Renci.SshNet.Connection.DirectConnector.Connect(IConnectionInfo connectionInfo)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at SftpFileSync.Worker.Services.SftpClientService.<>c__DisplayClass6_0.<CreateAsync>b__0() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 59
+2026-08-05 10:01:53.295 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 0
+Failed     : 0
+Duration   : 00:00:36
+2026-08-05 10:02:00.046 +05:45 [INF] Next execution at "2026-08-05T10:02:00.0000000+05:45"
+2026-08-05 10:02:06.768 +05:45 [INF] Starting SFTP synchronization...
+2026-08-05 10:02:17.711 +05:45 [ERR] Failed to connect to SFTP server localhost
+System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at Renci.SshNet.Abstractions.SocketAbstraction.ConnectCore(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout, Boolean ownsSocket)
+   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout)
+   at Renci.SshNet.Connection.ConnectorBase.SocketConnect(EndPoint endPoint, TimeSpan timeout)
+   at Renci.SshNet.Connection.DirectConnector.Connect(IConnectionInfo connectionInfo)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at SftpFileSync.Worker.Services.SftpClientService.<>c__DisplayClass6_0.<CreateAsync>b__0() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+2026-08-05 10:02:17.744 +05:45 [ERR] Unexpected error during synchronization.
+System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at Renci.SshNet.Abstractions.SocketAbstraction.ConnectCore(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout, Boolean ownsSocket)
+   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout)
+   at Renci.SshNet.Connection.ConnectorBase.SocketConnect(EndPoint endPoint, TimeSpan timeout)
+   at Renci.SshNet.Connection.DirectConnector.Connect(IConnectionInfo connectionInfo)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at SftpFileSync.Worker.Services.SftpClientService.<>c__DisplayClass6_0.<CreateAsync>b__0() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync() in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 60
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 59
+2026-08-05 10:02:17.753 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 0
+Failed     : 0
+Duration   : 00:00:10
+2026-08-05 10:02:30.861 +05:45 [INF] Worker Started
+2026-08-05 10:02:31.020 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-05 10:02:31.042 +05:45 [INF] Hosting environment: Production
+2026-08-05 10:02:31.055 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-05 10:03:00.061 +05:45 [INF] Next execution at "2026-08-05T10:03:00.0000000+05:45"
+2026-08-05 10:03:29.081 +05:45 [INF] Starting SFTP synchronization...
+2026-08-05 10:24:46.543 +05:45 [INF] Worker Started
+2026-08-05 10:24:46.723 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-05 10:24:46.767 +05:45 [INF] Hosting environment: Production
+2026-08-05 10:24:46.816 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-05 10:25:00.006 +05:45 [INF] Next execution at "2026-08-05T10:25:00.0000000+05:45"
+2026-08-05 10:25:13.347 +05:45 [INF] Starting SFTP synchronization...
+2026-08-05 10:25:13.349 +05:45 [INF] Synchronizing device: 
+2026-08-05 10:25:13.423 +05:45 [ERR] Failed to synchronize device 
+System.ArgumentException: The value cannot be an empty string or composed entirely of whitespace. (Parameter 'username')
+   at System.ArgumentException.ThrowNullOrWhiteSpaceException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.Common.ThrowHelper.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.AuthenticationMethod..ctor(String username)
+   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, Byte[] password)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, Byte[] password, ProxyTypes proxyType, String proxyHost, Int32 proxyPort, String proxyUsername, String proxyPassword)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, String password)
+   at Renci.SshNet.SftpClient..ctor(String host, Int32 port, String username, String password)
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync(SftpSettings settings) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 43
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 66
+2026-08-05 10:25:13.498 +05:45 [INF] Synchronizing device: 
+2026-08-05 10:25:13.531 +05:45 [ERR] Failed to synchronize device 
+System.ArgumentException: The value cannot be an empty string or composed entirely of whitespace. (Parameter 'username')
+   at System.ArgumentException.ThrowNullOrWhiteSpaceException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.Common.ThrowHelper.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.AuthenticationMethod..ctor(String username)
+   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, Byte[] password)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, Byte[] password, ProxyTypes proxyType, String proxyHost, Int32 proxyPort, String proxyUsername, String proxyPassword)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, String password)
+   at Renci.SshNet.SftpClient..ctor(String host, Int32 port, String username, String password)
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync(SftpSettings settings) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 43
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 66
+2026-08-05 10:25:13.536 +05:45 [INF] Synchronizing device: 
+2026-08-05 10:25:13.567 +05:45 [ERR] Failed to synchronize device 
+System.ArgumentException: The value cannot be an empty string or composed entirely of whitespace. (Parameter 'username')
+   at System.ArgumentException.ThrowNullOrWhiteSpaceException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.Common.ThrowHelper.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.AuthenticationMethod..ctor(String username)
+   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, Byte[] password)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, Byte[] password, ProxyTypes proxyType, String proxyHost, Int32 proxyPort, String proxyUsername, String proxyPassword)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, String password)
+   at Renci.SshNet.SftpClient..ctor(String host, Int32 port, String username, String password)
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync(SftpSettings settings) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 43
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 66
+2026-08-05 10:25:13.572 +05:45 [INF] Synchronizing device: 
+2026-08-05 10:25:13.604 +05:45 [ERR] Failed to synchronize device 
+System.ArgumentException: The value cannot be an empty string or composed entirely of whitespace. (Parameter 'username')
+   at System.ArgumentException.ThrowNullOrWhiteSpaceException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.Common.ThrowHelper.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.AuthenticationMethod..ctor(String username)
+   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, Byte[] password)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, Byte[] password, ProxyTypes proxyType, String proxyHost, Int32 proxyPort, String proxyUsername, String proxyPassword)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, String password)
+   at Renci.SshNet.SftpClient..ctor(String host, Int32 port, String username, String password)
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync(SftpSettings settings) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 43
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 66
+2026-08-05 10:25:13.608 +05:45 [INF] Synchronizing device: 
+2026-08-05 10:25:13.643 +05:45 [ERR] Failed to synchronize device 
+System.ArgumentException: The value cannot be an empty string or composed entirely of whitespace. (Parameter 'username')
+   at System.ArgumentException.ThrowNullOrWhiteSpaceException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.Common.ThrowHelper.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.AuthenticationMethod..ctor(String username)
+   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, Byte[] password)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, Byte[] password, ProxyTypes proxyType, String proxyHost, Int32 proxyPort, String proxyUsername, String proxyPassword)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, String password)
+   at Renci.SshNet.SftpClient..ctor(String host, Int32 port, String username, String password)
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync(SftpSettings settings) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 43
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 66
+2026-08-05 10:25:13.647 +05:45 [INF] Synchronizing device: 
+2026-08-05 10:25:13.679 +05:45 [ERR] Failed to synchronize device 
+System.ArgumentException: The value cannot be an empty string or composed entirely of whitespace. (Parameter 'username')
+   at System.ArgumentException.ThrowNullOrWhiteSpaceException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.Common.ThrowHelper.ThrowIfNullOrWhiteSpace(String argument, String paramName)
+   at Renci.SshNet.AuthenticationMethod..ctor(String username)
+   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, Byte[] password)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, Byte[] password, ProxyTypes proxyType, String proxyHost, Int32 proxyPort, String proxyUsername, String proxyPassword)
+   at Renci.SshNet.PasswordConnectionInfo..ctor(String host, Int32 port, String username, String password)
+   at Renci.SshNet.SftpClient..ctor(String host, Int32 port, String username, String password)
+   at SftpFileSync.Worker.Services.SftpClientService.CreateAsync(SftpSettings settings) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpClientService.cs:line 43
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 66
+2026-08-05 10:25:13.695 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 0
+Failed     : 0
+Duration   : 00:00:00
+2026-08-05 10:26:00.042 +05:45 [INF] Next execution at "2026-08-05T10:26:00.0000000+05:45"
+2026-08-05 10:27:15.939 +05:45 [INF] Worker Started
+2026-08-05 10:27:16.025 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-05 10:27:16.035 +05:45 [INF] Hosting environment: Production
+2026-08-05 10:27:16.039 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-05 10:28:00.050 +05:45 [INF] Next execution at "2026-08-05T10:28:00.0000000+05:45"
+2026-08-05 10:28:44.057 +05:45 [INF] Starting SFTP synchronization...
+2026-08-05 10:28:44.060 +05:45 [INF] Synchronizing device: 
+2026-08-05 10:28:46.322 +05:45 [INF] Connected to SFTP server localhost
+2026-08-05 10:28:46.404 +05:45 [INF] Skipping /upload/folderTest/testinsidetehfolder.txt
+2026-08-05 10:28:46.410 +05:45 [INF] Skipping /upload/hello.pdf
+2026-08-05 10:28:46.415 +05:45 [INF] Skipping /upload/test.txt
+2026-08-05 10:28:46.435 +05:45 [INF] Disconnected from SFTP server.
+2026-08-05 10:28:46.443 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 3
+Failed     : 0
+Duration   : 00:00:02

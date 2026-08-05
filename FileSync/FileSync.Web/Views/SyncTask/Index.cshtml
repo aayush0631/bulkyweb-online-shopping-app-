@@ -1,0 +1,84 @@
+﻿@model IEnumerable<FileSync.Models.Models.SyncTask>
+
+@{
+    ViewData["Title"] = "Sync Tasks";
+}
+
+<div class="container p-3">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary">
+            <i class="bi bi-arrow-repeat"></i> Sync Tasks
+        </h2>
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Add Sync Task
+        </a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            <i class="bi bi-info-circle"></i> No sync tasks configured yet. Click <strong>Add Sync Task</strong> to create one.
+        </div>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Task Name</th>
+                    <th>Connection</th>
+                    <th>Remote Path</th>
+                    <th>Local Path</th>
+                    <th class="text-center">Status</th>
+                    <th class="text-center" style="width:220px;">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.TaskName</td>
+                    <td>
+                        @if (item.Credential != null)
+                        {
+                            <span>@item.Credential.ConnectionName</span>
+                            <br />
+                            <small class="text-muted">\\@item.Credential.ServerName\@item.Credential.ShareName</small>
+                        }
+                    </td>
+                    <td><code>@item.RemoteRelativePath</code></td>
+                    <td><code>@item.LocalPath</code></td>
+                    <td class="text-center">
+                        @if (item.IsEnabled)
+                        {
+                            <span class="badge bg-success"><i class="bi bi-check-circle"></i> Enabled</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary"><i class="bi bi-x-circle"></i> Disabled</span>
+                        }
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="Toggle"
+                           asp-route-id="@item.Id"
+                           class="btn btn-sm @(item.IsEnabled ? "btn-outline-secondary" : "btn-outline-success")"
+                           title="@(item.IsEnabled ? "Disable" : "Enable")">
+                            <i class="bi @(item.IsEnabled ? "bi-pause-circle" : "bi-play-circle")"></i>
+                        </a>
+                        <a asp-action="Edit"
+                           asp-route-id="@item.Id"
+                           class="btn btn-warning btn-sm">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+                        <a asp-action="Delete"
+                           asp-route-id="@item.Id"
+                           class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+</div>

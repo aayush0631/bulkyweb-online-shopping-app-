@@ -1,0 +1,121 @@
+﻿@model FileSync.Models.ViewModels.SyncTaskViewModel
+
+@{
+    ViewData["Title"] = "Create Sync Task";
+}
+
+<form method="post">
+    <div class="card shadow border-0 mt-4">
+
+        <div class="card-header bg-primary bg-gradient py-3">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="text-white"><i class="bi bi-plus-circle"></i> Create Sync Task</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body p-4">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="TaskName" class="form-label">Task Name</label>
+                    <input asp-for="TaskName"
+                           class="form-control"
+                           placeholder="e.g. Backup Photos" />
+                    <span asp-validation-for="TaskName" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="CredentialId" class="form-label">Connection</label>
+                    <select asp-for="CredentialId"
+                            asp-items="Model.Credentials"
+                            class="form-select">
+                        <option value="">-- Select Connection --</option>
+                    </select>
+                    <span asp-validation-for="CredentialId" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="RemoteRelativePath" class="form-label">Remote Relative Path</label>
+                    <input asp-for="RemoteRelativePath"
+                           class="form-control"
+                           placeholder="e.g. Photos/2026" />
+                    <span asp-validation-for="RemoteRelativePath" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="LocalPath" class="form-label">Local Path</label>
+                    <input asp-for="LocalPath"
+                           class="form-control"
+                           placeholder="e.g. C:\Backups\Photos" />
+                    <span asp-validation-for="LocalPath" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="ScheduleTime" class="form-label">Schedule Time</label>
+                    <input asp-for="ScheduleTime"
+                           type="datetime-local"
+                           class="form-control" />
+                    <span asp-validation-for="ScheduleTime" class="text-danger"></span>
+                </div>
+            </div>
+
+            <hr />
+            <h5>Copy Options</h5>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="form-check form-switch">
+                        <input asp-for="SkipIfExists" class="form-check-input" />
+                        <label asp-for="SkipIfExists" class="form-check-label">Skip If Exists</label>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="form-check form-switch">
+                        <input asp-for="ResumeInterruptedCopy" class="form-check-input" />
+                        <label asp-for="ResumeInterruptedCopy" class="form-check-label">Resume Interrupted Copy</label>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="form-check form-switch">
+                        <input asp-for="VerifyAfterCopy" class="form-check-input" />
+                        <label asp-for="VerifyAfterCopy" class="form-check-label">Verify After Copy</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <div class="form-check form-switch">
+                    <input asp-for="IsEnabled" class="form-check-input" />
+                    <label asp-for="IsEnabled" class="form-check-label">Enabled</label>
+                </div>
+            </div>
+
+            <div class="row pt-2">
+                <div class="col-6 col-md-3">
+                    <button type="submit" class="btn btn-primary form-control">
+                        <i class="bi bi-check-circle"></i> Create
+                    </button>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a asp-action="Index" class="btn btn-outline-secondary form-control">
+                        <i class="bi bi-arrow-left"></i> Back
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="FileSync.DataAccess/FileSync.DataAccess.csproj" />
+  <Project Path="FileSync.Models/FileSync.Models.csproj" />
+  <Project Path="FileSync.Services/FileSync.Services.csproj" />
+  <Project Path="FileSync.Tests/FileSync.Tests.csproj" />
+  <Project Path="FileSync.Utilities/FileSync.Utilities.csproj" />
+  <Project Path="FileSync.Web/FileSync.Web.csproj" />
+  <Project Path="FileSync.Worker/FileSync.Worker.csproj" />
+</Solution>

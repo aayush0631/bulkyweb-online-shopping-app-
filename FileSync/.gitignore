@@ -1,0 +1,51 @@
+## Build outputs
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio cache and settings
+.vs/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+
+## Publishing outputs
+publish/
+*.pubxml
+*.pubxml.user
+
+## Database files
+*.db
+*.sqlite
+*.mdf
+*.ldf
+
+## Temp and crash dumps
+[Tt]emp/
+[Tt]mp/
+*.tmp
+*.temp
+*.crash
+*.dmp
+*.stackdump
+
+## OS / system files
+.DS_Store
+Thumbs.db
+
+## User-created temporary/compilation outputs in this session
+build_errors.txt
+build_errors_ansi.txt
+build_errors_da.txt
+build_errors_serv.txt
+build_errors_web.txt
+build_errors_all.txt

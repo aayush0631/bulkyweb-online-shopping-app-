@@ -1,0 +1,547 @@
+2026-08-04 12:15:46.658 +05:45 [INF] Worker Started
+2026-08-04 12:15:46.708 +05:45 [INF] Next execution at "2026-08-04T12:20:00.0000000+05:45"
+2026-08-04 12:15:46.718 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-04 12:15:46.721 +05:45 [INF] Hosting environment: Production
+2026-08-04 12:15:46.723 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-04 12:17:57.570 +05:45 [INF] Worker Started
+2026-08-04 12:17:57.628 +05:45 [INF] Next execution at "2026-08-04T12:20:00.0000000+05:45"
+2026-08-04 12:17:57.639 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-04 12:17:57.642 +05:45 [INF] Hosting environment: Production
+2026-08-04 12:17:57.647 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-04 12:20:05.444 +05:45 [INF] Worker Started
+2026-08-04 12:20:05.531 +05:45 [INF] Next execution at "2026-08-04T12:21:00.0000000+05:45"
+2026-08-04 12:20:05.545 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-04 12:20:05.547 +05:45 [INF] Hosting environment: Production
+2026-08-04 12:20:05.550 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-04 12:21:00.048 +05:45 [INF] Starting synchronization...
+2026-08-04 12:21:21.176 +05:45 [ERR] Error during SFTP synchronization.
+System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at Renci.SshNet.Abstractions.SocketAbstraction.ConnectCore(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout, Boolean ownsSocket)
+   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout)
+   at Renci.SshNet.Connection.ConnectorBase.SocketConnect(EndPoint endPoint, TimeSpan timeout)
+   at Renci.SshNet.Connection.DirectConnector.Connect(IConnectionInfo connectionInfo)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 33
+2026-08-04 12:21:21.241 +05:45 [INF] Next execution at "2026-08-04T12:22:00.0000000+05:45"
+2026-08-04 12:22:00.058 +05:45 [INF] Starting synchronization...
+2026-08-04 12:22:21.134 +05:45 [ERR] Error during SFTP synchronization.
+System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at Renci.SshNet.Abstractions.SocketAbstraction.ConnectCore(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout, Boolean ownsSocket)
+   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout)
+   at Renci.SshNet.Connection.ConnectorBase.SocketConnect(EndPoint endPoint, TimeSpan timeout)
+   at Renci.SshNet.Connection.DirectConnector.Connect(IConnectionInfo connectionInfo)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 33
+2026-08-04 12:22:21.141 +05:45 [INF] Next execution at "2026-08-04T12:23:00.0000000+05:45"
+2026-08-04 12:23:00.040 +05:45 [INF] Starting synchronization...
+2026-08-04 12:23:21.115 +05:45 [ERR] Error during SFTP synchronization.
+System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at Renci.SshNet.Abstractions.SocketAbstraction.ConnectCore(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout, Boolean ownsSocket)
+   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout)
+   at Renci.SshNet.Connection.ConnectorBase.SocketConnect(EndPoint endPoint, TimeSpan timeout)
+   at Renci.SshNet.Connection.DirectConnector.Connect(IConnectionInfo connectionInfo)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 33
+2026-08-04 12:23:21.127 +05:45 [INF] Next execution at "2026-08-04T12:24:00.0000000+05:45"
+2026-08-04 12:24:00.019 +05:45 [INF] Starting synchronization...
+2026-08-04 12:24:21.153 +05:45 [ERR] Error during SFTP synchronization.
+System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at Renci.SshNet.Abstractions.SocketAbstraction.ConnectCore(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout, Boolean ownsSocket)
+   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(Socket socket, EndPoint remoteEndpoint, TimeSpan connectTimeout)
+   at Renci.SshNet.Connection.ConnectorBase.SocketConnect(EndPoint endPoint, TimeSpan timeout)
+   at Renci.SshNet.Connection.DirectConnector.Connect(IConnectionInfo connectionInfo)
+   at Renci.SshNet.Session.Connect()
+   at Renci.SshNet.BaseClient.CreateAndConnectSession()
+   at Renci.SshNet.BaseClient.Connect()
+   at SftpFileSync.Worker.Services.SftpSyncService.ExecuteAsync(CancellationToken cancellationToken) in C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\Services\SftpSyncService.cs:line 33
+2026-08-04 12:24:21.159 +05:45 [INF] Next execution at "2026-08-04T12:25:00.0000000+05:45"
+2026-08-04 12:25:00.013 +05:45 [INF] Starting synchronization...
+2026-08-04 12:29:42.121 +05:45 [INF] Worker Started
+2026-08-04 12:29:42.224 +05:45 [INF] Next execution at "2026-08-04T12:30:00.0000000+05:45"
+2026-08-04 12:29:42.252 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-04 12:29:42.262 +05:45 [INF] Hosting environment: Production
+2026-08-04 12:29:42.273 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-04 12:30:00.047 +05:45 [INF] Starting SFTP synchronization
+2026-08-04 12:30:02.067 +05:45 [INF] Connected to SFTP server
+2026-08-04 12:30:02.069 +05:45 [INF] Processing file photo1.jpg
+2026-08-04 12:30:02.581 +05:45 [INF] Processing file report.pdf
+2026-08-04 12:30:03.097 +05:45 [INF] Processing file backup.zip
+2026-08-04 12:30:03.610 +05:45 [INF] Synchronization completed
+2026-08-04 12:30:03.613 +05:45 [INF] Next execution at "2026-08-04T12:31:00.0000000+05:45"
+2026-08-04 12:31:00.022 +05:45 [INF] Starting SFTP synchronization
+2026-08-04 12:31:02.033 +05:45 [INF] Connected to SFTP server
+2026-08-04 12:31:02.037 +05:45 [INF] Processing file photo1.jpg
+2026-08-04 12:31:02.545 +05:45 [INF] Processing file report.pdf
+2026-08-04 12:31:03.062 +05:45 [INF] Processing file backup.zip
+2026-08-04 12:31:03.575 +05:45 [INF] Synchronization completed
+2026-08-04 12:31:03.580 +05:45 [INF] Next execution at "2026-08-04T12:32:00.0000000+05:45"
+2026-08-04 12:32:00.015 +05:45 [INF] Starting SFTP synchronization
+2026-08-04 12:32:02.032 +05:45 [INF] Connected to SFTP server
+2026-08-04 12:32:02.036 +05:45 [INF] Processing file photo1.jpg
+2026-08-04 12:32:02.545 +05:45 [INF] Processing file report.pdf
+2026-08-04 12:32:03.058 +05:45 [INF] Processing file backup.zip
+2026-08-04 12:32:03.572 +05:45 [INF] Synchronization completed
+2026-08-04 12:32:03.576 +05:45 [INF] Next execution at "2026-08-04T12:33:00.0000000+05:45"
+2026-08-04 12:33:00.015 +05:45 [INF] Starting SFTP synchronization
+2026-08-04 12:33:02.038 +05:45 [INF] Connected to SFTP server
+2026-08-04 12:33:02.042 +05:45 [INF] Processing file photo1.jpg
+2026-08-04 12:33:02.554 +05:45 [INF] Processing file report.pdf
+2026-08-04 12:33:03.065 +05:45 [INF] Processing file backup.zip
+2026-08-04 12:33:03.580 +05:45 [INF] Synchronization completed
+2026-08-04 12:33:03.585 +05:45 [INF] Next execution at "2026-08-04T12:34:00.0000000+05:45"
+2026-08-04 15:05:14.035 +05:45 [INF] Worker Started
+2026-08-04 15:05:14.124 +05:45 [INF] Next execution at "2026-08-04T15:06:00.0000000+05:45"
+2026-08-04 15:05:14.141 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-04 15:05:14.145 +05:45 [INF] Hosting environment: Production
+2026-08-04 15:05:14.149 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-04 15:06:00.040 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:22:51.716 +05:45 [INF] Worker Started
+2026-08-04 15:22:51.789 +05:45 [INF] Next execution at "2026-08-04T15:23:00.0000000+05:45"
+2026-08-04 15:22:51.804 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-04 15:22:51.806 +05:45 [INF] Hosting environment: Production
+2026-08-04 15:22:51.810 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-04 15:23:00.031 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:23:01.230 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:23:01.256 +05:45 [INF] Downloading /upload/hello.pdf
+2026-08-04 15:23:01.320 +05:45 [INF] Downloaded file /upload/hello.pdf to C:\Downloads\Sftp\hello.pdf
+2026-08-04 15:23:01.324 +05:45 [INF] Downloading /upload/test.txt
+2026-08-04 15:23:01.371 +05:45 [INF] Downloaded file /upload/test.txt to C:\Downloads\Sftp\test.txt
+2026-08-04 15:23:01.387 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:23:01.402 +05:45 [INF] Synchronization completed
+
+Downloaded : 2
+Skipped    : 0
+Failed     : 0
+Duration   : 00:00:01
+2026-08-04 15:23:01.411 +05:45 [INF] Next execution at "2026-08-04T15:24:00.0000000+05:45"
+2026-08-04 15:24:00.030 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:24:00.579 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:24:00.594 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:24:00.596 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:24:00.600 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:24:00.602 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:24:00.603 +05:45 [INF] Next execution at "2026-08-04T15:25:00.0000000+05:45"
+2026-08-04 15:25:00.081 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:25:00.769 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:25:00.787 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:25:00.788 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:25:00.793 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:25:00.795 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:25:00.797 +05:45 [INF] Next execution at "2026-08-04T15:26:00.0000000+05:45"
+2026-08-04 15:26:00.037 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:26:00.658 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:26:00.678 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:26:00.698 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:26:00.718 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:26:00.728 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:26:00.734 +05:45 [INF] Next execution at "2026-08-04T15:27:00.0000000+05:45"
+2026-08-04 15:27:00.019 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:27:00.552 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:27:00.573 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:27:00.574 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:27:00.578 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:27:00.580 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:27:00.585 +05:45 [INF] Next execution at "2026-08-04T15:28:00.0000000+05:45"
+2026-08-04 15:28:00.028 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:28:00.628 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:28:00.641 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:28:00.642 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:28:00.645 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:28:00.649 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:28:00.655 +05:45 [INF] Next execution at "2026-08-04T15:29:00.0000000+05:45"
+2026-08-04 15:29:00.024 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:29:00.692 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:29:00.713 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:29:00.718 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:29:00.727 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:29:00.731 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:29:00.735 +05:45 [INF] Next execution at "2026-08-04T15:30:00.0000000+05:45"
+2026-08-04 15:30:00.024 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:30:00.571 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:30:00.585 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:30:00.587 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:30:00.592 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:30:00.595 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:30:00.597 +05:45 [INF] Next execution at "2026-08-04T15:31:00.0000000+05:45"
+2026-08-04 15:31:00.024 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:31:00.595 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:31:00.603 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:31:00.606 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:31:00.613 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:31:00.620 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:31:00.629 +05:45 [INF] Next execution at "2026-08-04T15:32:00.0000000+05:45"
+2026-08-04 15:32:00.041 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:32:00.539 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:32:00.554 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:32:00.559 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:32:00.567 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:32:00.582 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:32:00.589 +05:45 [INF] Next execution at "2026-08-04T15:33:00.0000000+05:45"
+2026-08-04 15:33:00.028 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:33:00.555 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:33:00.567 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:33:00.570 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:33:00.578 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:33:00.584 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:33:00.598 +05:45 [INF] Next execution at "2026-08-04T15:34:00.0000000+05:45"
+2026-08-04 15:34:00.018 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:34:00.578 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:34:00.612 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:34:00.616 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:34:00.625 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:34:00.630 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:34:00.637 +05:45 [INF] Next execution at "2026-08-04T15:35:00.0000000+05:45"
+2026-08-04 15:35:00.029 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:35:00.546 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:35:00.555 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:35:00.556 +05:45 [INF] Downloading /upload/test.txt
+2026-08-04 15:35:00.613 +05:45 [INF] Downloaded file /upload/test.txt to C:\Downloads\Sftp\test.txt
+2026-08-04 15:35:00.630 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:35:00.638 +05:45 [INF] Synchronization completed
+
+Downloaded : 1
+Skipped    : 1
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:35:00.646 +05:45 [INF] Next execution at "2026-08-04T15:36:00.0000000+05:45"
+2026-08-04 15:36:00.021 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:36:00.547 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:36:00.556 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:36:00.557 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:36:00.560 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:36:00.562 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:36:00.562 +05:45 [INF] Next execution at "2026-08-04T15:37:00.0000000+05:45"
+2026-08-04 15:37:00.030 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:37:00.623 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:37:00.646 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:37:00.654 +05:45 [INF] Downloading /upload/test.txt
+2026-08-04 15:37:00.699 +05:45 [INF] Downloaded file /upload/test.txt to C:\Downloads\Sftp\test.txt
+2026-08-04 15:37:00.706 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:37:00.709 +05:45 [INF] Synchronization completed
+
+Downloaded : 1
+Skipped    : 1
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:37:00.711 +05:45 [INF] Next execution at "2026-08-04T15:38:00.0000000+05:45"
+2026-08-04 15:38:00.028 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:38:00.581 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:38:00.588 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:38:00.589 +05:45 [INF] Downloading /upload/test.txt
+2026-08-04 15:38:00.610 +05:45 [INF] Downloaded file /upload/test.txt to C:\Downloads\Sftp\test.txt
+2026-08-04 15:38:00.628 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:38:00.634 +05:45 [INF] Synchronization completed
+
+Downloaded : 1
+Skipped    : 1
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:38:00.643 +05:45 [INF] Next execution at "2026-08-04T15:39:00.0000000+05:45"
+2026-08-04 15:39:00.029 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:39:00.653 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:39:00.683 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:39:00.686 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:39:00.695 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:39:00.702 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:39:00.707 +05:45 [INF] Next execution at "2026-08-04T15:40:00.0000000+05:45"
+2026-08-04 15:40:00.026 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:40:00.606 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:40:00.619 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:40:00.621 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:40:00.626 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:40:00.628 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:40:00.631 +05:45 [INF] Next execution at "2026-08-04T15:41:00.0000000+05:45"
+2026-08-04 15:41:00.024 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:41:00.569 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:41:00.577 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:41:00.578 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:41:00.580 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:41:00.582 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:41:00.583 +05:45 [INF] Next execution at "2026-08-04T15:42:00.0000000+05:45"
+2026-08-04 15:42:00.020 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:42:00.565 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:42:00.580 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:42:00.582 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:42:00.587 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:42:00.593 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:42:00.598 +05:45 [INF] Next execution at "2026-08-04T15:43:00.0000000+05:45"
+2026-08-04 15:43:00.029 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:43:00.597 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:43:00.607 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:43:00.608 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:43:00.615 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:43:00.617 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:43:00.618 +05:45 [INF] Next execution at "2026-08-04T15:44:00.0000000+05:45"
+2026-08-04 15:44:00.017 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:44:00.533 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:44:00.542 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:44:00.543 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:44:00.546 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:44:00.548 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:44:00.548 +05:45 [INF] Next execution at "2026-08-04T15:45:00.0000000+05:45"
+2026-08-04 15:45:00.022 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:45:00.587 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:45:00.594 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:45:00.595 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:45:00.597 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:45:00.599 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:45:00.600 +05:45 [INF] Next execution at "2026-08-04T15:46:00.0000000+05:45"
+2026-08-04 15:46:00.018 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:46:00.579 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:46:00.591 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:46:00.592 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:46:00.595 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:46:00.596 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 15:46:00.598 +05:45 [INF] Next execution at "2026-08-04T15:47:00.0000000+05:45"
+2026-08-04 15:58:00.776 +05:45 [INF] Worker Started
+2026-08-04 15:58:00.869 +05:45 [INF] Next execution at "2026-08-04T15:59:00.0000000+05:45"
+2026-08-04 15:58:00.882 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-04 15:58:00.884 +05:45 [INF] Hosting environment: Production
+2026-08-04 15:58:00.886 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-04 15:59:00.046 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 15:59:00.992 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 15:59:01.016 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 15:59:01.018 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 15:59:01.036 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 15:59:01.058 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:01
+2026-08-04 15:59:01.064 +05:45 [INF] Next execution at "2026-08-04T16:00:00.0000000+05:45"
+2026-08-04 16:00:00.024 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 16:00:00.610 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 16:00:00.632 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 16:00:00.635 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 16:00:00.644 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 16:00:00.648 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 16:00:00.651 +05:45 [INF] Next execution at "2026-08-04T16:01:00.0000000+05:45"
+2026-08-04 16:00:55.947 +05:45 [INF] Application is shutting down...
+2026-08-04 16:01:03.522 +05:45 [INF] Worker Started
+2026-08-04 16:01:03.576 +05:45 [INF] Next execution at "2026-08-04T16:02:00.0000000+05:45"
+2026-08-04 16:01:03.594 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-04 16:01:03.597 +05:45 [INF] Hosting environment: Production
+2026-08-04 16:01:03.601 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-04 16:01:13.461 +05:45 [INF] Worker Started
+2026-08-04 16:01:13.530 +05:45 [INF] Next execution at "2026-08-04T16:02:00.0000000+05:45"
+2026-08-04 16:01:13.540 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-04 16:01:13.541 +05:45 [INF] Hosting environment: Production
+2026-08-04 16:01:13.542 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-04 16:02:00.027 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 16:02:00.733 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 16:02:00.750 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 16:02:00.753 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 16:02:00.768 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 16:02:00.775 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 16:02:00.778 +05:45 [INF] Next execution at "2026-08-04T16:03:00.0000000+05:45"
+2026-08-04 16:03:00.016 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 16:03:00.581 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 16:03:00.624 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 16:03:00.634 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 16:03:00.641 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 16:03:00.646 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 16:03:00.650 +05:45 [INF] Next execution at "2026-08-04T16:04:00.0000000+05:45"
+2026-08-04 16:04:00.029 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 16:04:00.528 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 16:04:00.541 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 16:04:00.545 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 16:04:00.554 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 16:04:00.558 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 16:04:00.562 +05:45 [INF] Next execution at "2026-08-04T16:05:00.0000000+05:45"
+2026-08-04 16:05:00.021 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 16:05:00.567 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 16:05:00.584 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 16:05:00.585 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 16:05:00.590 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 16:05:00.609 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 16:05:00.627 +05:45 [INF] Next execution at "2026-08-04T16:06:00.0000000+05:45"
+2026-08-04 16:06:00.034 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 16:06:00.551 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 16:06:00.571 +05:45 [INF] Downloading /upload/folderTest/testinsidetehfolder.txt
+2026-08-04 16:06:00.622 +05:45 [INF] Downloaded file /upload/folderTest/testinsidetehfolder.txt to C:\Downloads\Sftp\folderTest\testinsidetehfolder.txt
+2026-08-04 16:06:00.624 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 16:06:00.626 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 16:06:00.632 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 16:06:00.649 +05:45 [INF] Synchronization completed
+
+Downloaded : 1
+Skipped    : 2
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 16:06:00.654 +05:45 [INF] Next execution at "2026-08-04T16:07:00.0000000+05:45"
+2026-08-04 16:07:00.029 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 16:07:00.572 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 16:07:00.589 +05:45 [INF] Skipping /upload/folderTest/testinsidetehfolder.txt (already up to date)
+2026-08-04 16:07:00.590 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 16:07:00.591 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 16:07:00.593 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 16:07:00.596 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 3
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 16:07:00.597 +05:45 [INF] Next execution at "2026-08-04T16:08:00.0000000+05:45"
+2026-08-04 16:07:56.649 +05:45 [INF] Worker Started
+2026-08-04 16:07:56.748 +05:45 [INF] Next execution at "2026-08-04T16:08:00.0000000+05:45"
+2026-08-04 16:07:56.765 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-04 16:07:56.768 +05:45 [INF] Hosting environment: Production
+2026-08-04 16:07:56.771 +05:45 [INF] Content root path: C:\Users\Acer\dotnet_apps\SftpFileSync\SftpFileSync.Worker\bin\Debug\net8.0
+2026-08-04 16:08:00.029 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 16:08:00.879 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 16:08:00.938 +05:45 [INF] Skipping /upload/folderTest/testinsidetehfolder.txt (already up to date)
+2026-08-04 16:08:00.941 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 16:08:00.943 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 16:08:00.966 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 16:08:00.979 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 3
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 16:08:00.984 +05:45 [INF] Next execution at "2026-08-04T16:09:00.0000000+05:45"
+2026-08-04 16:09:00.071 +05:45 [INF] Starting SFTP synchronization...
+2026-08-04 16:09:00.591 +05:45 [INF] Connected to SFTP server localhost
+2026-08-04 16:09:00.655 +05:45 [INF] Skipping /upload/folderTest/testinsidetehfolder.txt (already up to date)
+2026-08-04 16:09:00.662 +05:45 [INF] Skipping /upload/hello.pdf (already up to date)
+2026-08-04 16:09:00.666 +05:45 [INF] Skipping /upload/test.txt (already up to date)
+2026-08-04 16:09:00.674 +05:45 [INF] Disconnected from SFTP server localhost
+2026-08-04 16:09:00.680 +05:45 [INF] Synchronization completed
+
+Downloaded : 0
+Skipped    : 3
+Failed     : 0
+Duration   : 00:00:00
+2026-08-04 16:09:00.688 +05:45 [INF] Next execution at "2026-08-04T16:10:00.0000000+05:45"

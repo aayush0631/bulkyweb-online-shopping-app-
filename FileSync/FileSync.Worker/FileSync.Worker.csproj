@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-FileSync.Worker-01939675-7517-43b3-b02d-d2ff3e1ab3b0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.21" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="10.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileSync.DataAccess\FileSync.DataAccess.csproj" />
+    <ProjectReference Include="..\FileSync.Models\FileSync.Models.csproj" />
+    <ProjectReference Include="..\FileSync.Services\FileSync.Services.csproj" />
+    <ProjectReference Include="..\FileSync.Tests\FileSync.Tests.csproj" />
+    <ProjectReference Include="..\FileSync.Utilities\FileSync.Utilities.csproj" />
+  </ItemGroup>
+</Project>

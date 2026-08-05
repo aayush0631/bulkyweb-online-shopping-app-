@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Acer\\dotnet_apps\\SftpFileSync.Worker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3BDD13AE-C983-486F-BC20-C32CC21F51CD}|SftpFileSync.Worker.csproj|c:\\users\\acer\\dotnet_apps\\sftpfilesync.worker\\models\\schedulesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BDD13AE-C983-486F-BC20-C32CC21F51CD}|SftpFileSync.Worker.csproj|solutionrelative:models\\schedulesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BDD13AE-C983-486F-BC20-C32CC21F51CD}|SftpFileSync.Worker.csproj|c:\\users\\acer\\dotnet_apps\\sftpfilesync.worker\\models\\sftpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BDD13AE-C983-486F-BC20-C32CC21F51CD}|SftpFileSync.Worker.csproj|solutionrelative:models\\sftpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BDD13AE-C983-486F-BC20-C32CC21F51CD}|SftpFileSync.Worker.csproj|c:\\users\\acer\\dotnet_apps\\sftpfilesync.worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BDD13AE-C983-486F-BC20-C32CC21F51CD}|SftpFileSync.Worker.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ScheduleSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\dotnet_apps\\SftpFileSync.Worker\\Models\\ScheduleSettings.cs",
+              "RelativeDocumentMoniker": "Models\\ScheduleSettings.cs",
+              "ToolTip": "C:\\Users\\Acer\\dotnet_apps\\SftpFileSync.Worker\\Models\\ScheduleSettings.cs",
+              "RelativeToolTip": "Models\\ScheduleSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T05:02:45.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SftpSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\dotnet_apps\\SftpFileSync.Worker\\Models\\SftpSettings.cs",
+              "RelativeDocumentMoniker": "Models\\SftpSettings.cs",
+              "ToolTip": "C:\\Users\\Acer\\dotnet_apps\\SftpFileSync.Worker\\Models\\SftpSettings.cs",
+              "RelativeToolTip": "Models\\SftpSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T05:00:46.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\dotnet_apps\\SftpFileSync.Worker\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Acer\\dotnet_apps\\SftpFileSync.Worker\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T04:57:46.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

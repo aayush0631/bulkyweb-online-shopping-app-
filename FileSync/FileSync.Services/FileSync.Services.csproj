@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\FileSync.Models\FileSync.Models.csproj" />
+		<ProjectReference Include="..\FileSync.DataAccess\FileSync.DataAccess.csproj" />
+		<ProjectReference Include="..\FileSync.Utilities\FileSync.Utilities.csproj" />
+	</ItemGroup>
+
+</Project>
